@@ -1,12 +1,12 @@
-# 💰 Alarcan Finance — Tela de Visão Geral
+# Alarcan Finance — Tela de Visão Geral
 
-Tela do projeto **Fintech Alarcan Finance**, desenvolvida como atividade da **Fase 4 da FIAP** ("View"). Recria, em **HTML + CSS + Tailwind CSS**, a tela de Visão Geral originalmente desenhada na Fase 2.
+Tela do projeto Fintech **Alarcan Finance**, desenvolvida como atividade da **Fase 4 da FIAP** ("View"). Recria, em **HTML + CSS + Tailwind CSS**, a tela de Visão Geral originalmente desenhada na Fase 2.
 
 > *"Quem vê interface, vê coração."*
 
 ---
 
-## 🎯 Sobre a tela
+## Sobre a tela
 
 A **Visão Geral** é o painel principal do Alarcan Finance, um sistema de finanças pessoais com tema escuro. Nela o usuário acompanha:
 
@@ -18,7 +18,7 @@ A **Visão Geral** é o painel principal do Alarcan Finance, um sistema de finan
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 | Tecnologia | Uso |
 |------------|-----|
@@ -30,7 +30,7 @@ A **Visão Geral** é o painel principal do Alarcan Finance, um sistema de finan
 
 ---
 
-## 📱 Responsividade
+## Responsividade
 
 Construída com a abordagem **Mobile First** do Tailwind, usando os breakpoints `sm`, `md`, `lg` e `xl`:
 
@@ -40,7 +40,7 @@ Construída com a abordagem **Mobile First** do Tailwind, usando os breakpoints 
 
 ---
 
-## ▶️ Como executar
+## Como executar
 
 Não é necessária instalação. Basta abrir o arquivo **`index.html`** no navegador (duplo clique).
 
@@ -55,7 +55,7 @@ npx tailwindcss -i ./src/input.css -o ./css/styles.css --watch
 
 ---
 
-## 📂 Estrutura
+## Estrutura
 
 ```
 alarcan-finance/
