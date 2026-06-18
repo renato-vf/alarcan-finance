@@ -71,7 +71,7 @@ alarcan-finance/
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Renato Vieira Filho** — RM570645
-FIAP · Fase 4 (View) · 2026
+FIAP · Fase 4 · 2026
