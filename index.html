@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarcan Finance — Controle pessoal das suas finanças</title>
+  <meta name="description" content="Alarcan Finance: dashboard de finanças pessoais com saldo, histórico, categorias e previsão.">
+  <meta name="author" content="Renato Vieira Filho">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS gerado pelo Tailwind CSS (classes utilitárias compiladas) -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-af-bg text-af-text font-sans min-h-screen">
+  <div class="min-h-screen w-full flex">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="hidden lg:flex w-60 shrink-0 bg-af-bg border-r border-af-border flex-col p-4 gap-2">
+      <div class="flex items-center gap-3 p-3 mb-2 rounded-2xl bg-af-surface border border-af-border">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-af-blue to-blue-600 flex items-center justify-center shadow-lg shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+        </div>
+        <div class="leading-tight">
+          <div class="font-bold text-af-blueglow text-[15px]">Alarcan Finance</div>
+          <div class="text-[11px] text-af-muted">Controle pessoal</div>
+        </div>
+      </div>
+
+      <nav class="flex flex-col gap-1 mt-2">
+        <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm bg-af-blue/10 text-af-blue font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Início</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-af-muted hover:bg-af-surface hover:text-af-text transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg><span>Registrar</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-af-muted hover:bg-af-surface hover:text-af-text transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Histórico</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-af-muted hover:bg-af-surface hover:text-af-text transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg><span>Categorias</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-af-muted hover:bg-af-surface hover:text-af-text transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/></svg><span>Previsão</span>
+        </a>
+      </nav>
+
+      <div class="mt-auto">
+        <div class="flex items-center gap-3 p-3 rounded-2xl bg-af-surface border border-af-border">
+          <div class="h-9 w-9 rounded-full bg-af-blue/15 text-af-blue flex items-center justify-center text-xs font-semibold shrink-0">RV</div>
+          <div class="leading-tight flex-1 min-w-0">
+            <div class="text-sm font-medium text-af-text truncate">Renato V.</div>
+            <div class="text-[11px] text-af-muted">Minha conta</div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-af-muted hover:text-af-text cursor-pointer"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================== MAIN ===================== -->
+    <main class="flex-1 min-w-0 p-4 sm:p-6 overflow-x-hidden">
+
+      <!-- Cabeçalho -->
+      <header class="relative overflow-hidden p-5 sm:p-6 mb-5 rounded-2xl bg-af-surface border border-af-border">
+        <div class="relative flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-[0.18em] text-af-yellow mb-1.5">Início</div>
+            <h1 class="text-2xl sm:text-[26px] font-bold leading-tight">Visão Geral</h1>
+            <p class="text-[13px] text-af-muted mt-1">Seu mês em tempo real.</p>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button class="h-10 w-10 flex items-center justify-center rounded-lg border border-af-border bg-af-surface2/60 hover:border-af-blue transition-colors" aria-label="Buscar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </button>
+            <a href="#" class="h-10 px-4 flex items-center gap-2 rounded-lg bg-gradient-to-br from-af-blue to-blue-600 text-white text-sm font-medium shadow-lg hover:opacity-90 transition-opacity flex-1 sm:flex-none justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"/><path d="M12 5v14"/></svg>Registrar
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cards de resumo -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-5">
+        <div class="relative overflow-hidden p-5 rounded-2xl border border-af-blue/40 bg-af-blue/10">
+          <div class="text-[12px] font-medium mb-2 text-af-blue">Saldo disponível</div>
+          <div class="text-[28px] font-bold tabular-nums text-af-blueglow">R$ 4.250,00</div>
+          <div class="text-[11px] mt-2 text-af-blue opacity-80">&#8599; Atualizado agora</div>
+        </div>
+        <div class="relative overflow-hidden p-5 rounded-2xl border border-af-green/40 bg-af-green/10">
+          <div class="text-[12px] font-medium mb-2 text-af-green">Entradas (mês)</div>
+          <div class="text-[28px] font-bold tabular-nums text-af-green">R$ 7.800,00</div>
+          <div class="text-[11px] mt-2 text-af-green opacity-80">4 transações</div>
+        </div>
+        <div class="relative overflow-hidden p-5 rounded-2xl border border-af-red/40 bg-af-red/10">
+          <div class="text-[12px] font-medium mb-2 text-af-red">Saídas (mês)</div>
+          <div class="text-[28px] font-bold tabular-nums text-af-red">R$ 3.550,00</div>
+          <div class="text-[11px] mt-2 text-af-red opacity-80">11 transações</div>
+        </div>
+      </div>
+
+      <!-- Conteúdo -->
+      <div class="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-4">
+
+        <!-- Transações -->
+        <section class="p-5 rounded-2xl bg-af-surface border border-af-border">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="font-semibold text-[17px]">Transações recentes</h2>
+            <a href="#" class="text-[12px] text-af-blue hover:text-af-blueglow flex items-center gap-1">Ver todas <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+
+          <div class="hidden md:grid grid-cols-[1.4fr_1fr_110px_1fr_140px] items-center gap-3 px-4 pb-2 text-[11px] uppercase tracking-wider text-af-muted border-b border-af-border mb-2">
+            <span>Descrição</span><span>Categoria</span><span>Tipo</span><span>Data</span><span class="text-right">Valor</span>
+          </div>
+
+          <ul class="flex flex-col gap-2">
+            <li class="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_110px_1fr_140px] md:items-center gap-2 md:gap-3 rounded-xl border border-af-border bg-af-surface2/60 px-4 py-3 hover:bg-af-surface2 transition-colors">
+              <span class="font-semibold text-sm">Salário</span>
+              <span class="text-[12px] text-af-muted">Receita</span>
+              <span><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-af-green/15 text-af-green border border-af-green/30">Receita</span></span>
+              <span class="text-[12px] text-af-muted tabular-nums">01/04/2026</span>
+              <span class="md:text-right font-semibold text-sm tabular-nums text-af-green">+ R$ 5.000</span>
+            </li>
+            <li class="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_110px_1fr_140px] md:items-center gap-2 md:gap-3 rounded-xl border border-af-border bg-af-surface2/60 px-4 py-3 hover:bg-af-surface2 transition-colors">
+              <span class="font-semibold text-sm">Aluguel</span>
+              <span class="text-[12px] text-af-muted">Moradia</span>
+              <span><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-af-red/15 text-af-red border border-af-red/30">Despesa</span></span>
+              <span class="text-[12px] text-af-muted tabular-nums">03/04/2026</span>
+              <span class="md:text-right font-semibold text-sm tabular-nums text-af-red">- R$ 1.800</span>
+            </li>
+            <li class="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_110px_1fr_140px] md:items-center gap-2 md:gap-3 rounded-xl border border-af-border bg-af-surface2/60 px-4 py-3 hover:bg-af-surface2 transition-colors">
+              <span class="font-semibold text-sm">Supermercado</span>
+              <span class="text-[12px] text-af-muted">Alimentação</span>
+              <span><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-af-red/15 text-af-red border border-af-red/30">Despesa</span></span>
+              <span class="text-[12px] text-af-muted tabular-nums">05/04/2026</span>
+              <span class="md:text-right font-semibold text-sm tabular-nums text-af-red">- R$ 420</span>
+            </li>
+            <li class="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_110px_1fr_140px] md:items-center gap-2 md:gap-3 rounded-xl border border-af-border bg-af-surface2/60 px-4 py-3 hover:bg-af-surface2 transition-colors">
+              <span class="font-semibold text-sm">Freelance</span>
+              <span class="text-[12px] text-af-muted">Receita</span>
+              <span><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-af-green/15 text-af-green border border-af-green/30">Receita</span></span>
+              <span class="text-[12px] text-af-muted tabular-nums">08/04/2026</span>
+              <span class="md:text-right font-semibold text-sm tabular-nums text-af-green">+ R$ 2.800</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Coluna lateral -->
+        <aside class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-4">
+          <div class="p-5 rounded-2xl bg-af-surface border border-af-border">
+            <div class="flex items-start justify-between mb-1">
+              <h3 class="font-semibold">Meta do mês</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-af-blue"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+            </div>
+            <p class="text-[12px] text-af-muted mb-4">Reserva de emergência</p>
+            <div class="h-2 rounded-full bg-af-surface2 overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-af-blue to-af-blueglow rounded-full" style="width: 68%"></div>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <span class="text-sm font-semibold">R$ 6.800</span>
+              <span class="text-sm text-af-blue font-semibold">68%</span>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-af-surface border border-af-border">
+            <div class="flex items-start justify-between mb-3">
+              <h3 class="font-semibold">Categorias</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-af-yellow"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div>
+                <div class="flex items-center justify-between text-[12px] mb-1"><span class="font-medium">Receita</span><span class="text-af-muted">44%</span></div>
+                <div class="h-1.5 rounded-full bg-af-surface2 overflow-hidden"><div class="h-full bg-af-green rounded-full" style="width:44%"></div></div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between text-[12px] mb-1"><span class="font-medium">Moradia</span><span class="text-af-muted">28%</span></div>
+                <div class="h-1.5 rounded-full bg-af-surface2 overflow-hidden"><div class="h-full bg-af-blue rounded-full" style="width:28%"></div></div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between text-[12px] mb-1"><span class="font-medium">Mercado</span><span class="text-af-muted">18%</span></div>
+                <div class="h-1.5 rounded-full bg-af-surface2 overflow-hidden"><div class="h-full bg-af-yellow rounded-full" style="width:18%"></div></div>
+              </div>
+              <div>
+                <div class="flex items-center justify-between text-[12px] mb-1"><span class="font-medium">Outros</span><span class="text-af-muted">10%</span></div>
+                <div class="h-1.5 rounded-full bg-af-surface2 overflow-hidden"><div class="h-full bg-af-red rounded-full" style="width:10%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-af-surface border border-af-border sm:col-span-2 xl:col-span-1">
+            <div class="flex items-center gap-2 text-af-blue text-[12px] font-medium mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+              <span>Próxima cobrança</span>
+            </div>
+            <div class="text-xl font-bold">Internet</div>
+            <p class="text-[12px] text-af-muted mt-1">Vence em 3 dias · R$ 129,90</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

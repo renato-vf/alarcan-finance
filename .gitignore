@@ -1,0 +1,6 @@
+# Dependências do Node (não precisam ir para o GitHub)
+node_modules/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
